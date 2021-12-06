@@ -6,7 +6,16 @@ using namespace std;
 class commandprocess{
     public:
         commandprocess();
-        void printout();
+        void createDB();
+        void createTable();
+        void openDB();
+        void openTable();
+        void insert();
+        void add();
+        void update();
+        void del();
+        void select();
+        void back();
     private:
-        int nice;
+        bool valid;
 };

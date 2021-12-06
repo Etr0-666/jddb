@@ -1,11 +1,10 @@
 #include"commandprocess.h"
 commandprocess::commandprocess(){
-    nice = 1;
+    valid=true;
 }
-void commandprocess::printout(){
-    cout << nice;
+void commandprocess::createDB(){
+
 }
 int main(){
     commandprocess test;
-    test.printout();
 }
