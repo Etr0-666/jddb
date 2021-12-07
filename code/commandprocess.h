@@ -6,6 +6,7 @@ using namespace std;
 class commandprocess{
     public:
         commandprocess();
+        commandprocess(string &str);
         void createDB();
         void createTable();
         void openDB();
@@ -16,6 +17,8 @@ class commandprocess{
         void del();
         void select();
         void back();
+        void help();
     private:
         bool valid;
+        string input;
 };
