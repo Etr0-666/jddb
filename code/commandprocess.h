@@ -9,8 +9,8 @@ class commandprocess{
         commandprocess(string &str);
         void createDB();
         void createTable();
-        void openDB();
-        void openTable();
+        void useDB();
+        void useTable();
         void insert();
         void add();
         void update();
@@ -21,4 +21,5 @@ class commandprocess{
     private:
         bool valid;
         string input;
+        vector<string> Parameter;
 };

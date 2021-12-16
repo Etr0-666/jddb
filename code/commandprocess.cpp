@@ -7,15 +7,16 @@ commandprocess::commandprocess(string &str){
     input = str;
 }
 void commandprocess::createDB(){
-
+    regex rule("(?!createDB)\\s(\\S*)");
+    smatch name;
 }
 void commandprocess::createTable(){
 
 }
-void commandprocess::openDB(){
+void commandprocess::useDB(){
 
 }
-void commandprocess::openTable(){
+void commandprocess::useTable(){
     
 }
 void commandprocess::insert(){
