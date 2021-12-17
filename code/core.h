@@ -2,8 +2,9 @@
 #include<iostream>
 #include<ctime>
 #include"commandprocess.h"
+#include"table.h"
 using namespace std;
-class core{
+class core:public table{
     public:
         //core();
         //~core();
