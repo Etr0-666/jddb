@@ -7,6 +7,7 @@ class commandprocess{
     public:
         commandprocess();
         commandprocess(string &str);
+        void process();
         void createDB();
         void createTable();
         void useDB();
@@ -17,9 +18,14 @@ class commandprocess{
         void del();
         void select();
         void back();
-        void help();
+        void help(int i);
+        string& getKeyword();
+        void setInput(string &cmd);
+        bool _valid();
+        vector<string>&getParameter();
     private:
         bool valid;
         string input;
+        string keyword;
         vector<string> Parameter;
 };
