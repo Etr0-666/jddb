@@ -8,5 +8,6 @@ int main(){
     vector<int>::iterator it;
     it = begin(obj);
     obj[1]=3;
-    cout << *it;
+    cout << *it << endl;
+    cout << obj.size() << endl;
 }
